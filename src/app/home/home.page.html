@@ -1,60 +1,16 @@
-<ion-app>
-  <ion-content>
 
-    <ion-grid>
-      <ion-row offset="3">
-        <ion-col size-md="6" offset-md="3">
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
 
-          <ion-card>
-            <ion-card-header color="primary"><b>SIGN IN</b></ion-card-header>
-            <ion-card-content>
-
-                <ion-segment>
-                    <ion-segment-button checked>
-                      <ion-label><b>User</b></ion-label>
-                    </ion-segment-button>
-                    <ion-segment-button >
-                      <ion-label ><b>Organizer</b></ion-label>
-                    </ion-segment-button>
-                  </ion-segment>
-
-              <ion-item>
-                <ion-label position="floating"><b>Username</b></ion-label>
-                <br>
-                <ion-input type="text"><ion-icon slot="start" name="person" ></ion-icon>&nbsp;</ion-input>
-              </ion-item>
-
-              <ion-item>
-                  <ion-label position="floating"><b>Password</b></ion-label>
-                  <br>
-                  <ion-input type="Password"><ion-icon slot="start" name="key"></ion-icon>&nbsp;</ion-input>
-                </ion-item>
-                <br>
-                
-                <div>
-                  <input type="checkbox" checked>
-                      <label>Remember me</label>
-               
-                      <ion-button fill="clear" size="small" >Forgot password?</ion-button>
-                      </div>
-                  <br><br>
-                
-              <ion-button expand="block" ><ion-icon name="log-in" slot="end"></ion-icon>Login</ion-button>
-            <br>
-            <ion-col size-md="4">
-                <ion-label size="small">Don't have an Account?</ion-label>
-                <br>
-                <ion-button size="small">Sign Up</ion-button>
-            </ion-col>
-
-          </ion-card-content>
-          </ion-card>
-
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-
-  </ion-content>
-</ion-app>
-
+<ion-content >
+  <ion-item color = "dark">
+    <ion-button color="primary" (click)= "toFeatures()">features </ion-button>
+    <ion-button color = "secondary" (click)= "toLogin()">login</ion-button>
+  </ion-item>
+</ion-content>
 
