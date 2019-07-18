@@ -13,4 +13,7 @@ export class HomePage {
   toFeatures(){
     this.router.navigate(['features'])
   }
+  toSelectCity(){
+    this.router.navigate(['selectcity'])
+  }
 }
