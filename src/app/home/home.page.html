@@ -1,14 +1,55 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster
-    <p>if you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
-</ion-content>
+<ion-content padding>
+    <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-list>
+               <ion-card>
+                  <ion-card-header color="primary" offset="6"><b>SIGN UP</b></ion-card-header>
+                 <ion-card-content>
+                    <ion-segment>
+                        <ion-segment-button checked>
+                          <ion-label><b>USER</b></ion-label>
+                        </ion-segment-button>
+                        <ion-segment-button>
+                          <ion-label><b>ORGANIZER</b></ion-label>
+                        </ion-segment-button>
+                      </ion-segment>
+                    <ion-item>
+                      <ion-label position="floating"><b>Full Name</b></ion-label>
+                        <ion-input type="text" required></ion-input>
+                      </ion-item>
+          
+                      <ion-item>
+                          <ion-label position="floating"><b>Email</b></ion-label>
+                        <ion-input type="text" required></ion-input>
+                      </ion-item>
+    
+                      <ion-item>
+                          <ion-label position="floating"><b>User Name</b></ion-label>
+                        <ion-input type="text" required></ion-input>
+                      </ion-item>
+          
+                      <ion-item>
+                          <ion-label position="floating"><b>Password</b></ion-label>
+                        <ion-input type="password" required></ion-input>
+                      </ion-item>
+          
+                      <ion-item>
+                          <ion-label position="floating"><b>Confirm Password</b></ion-label>
+                        <ion-input type="password" required></ion-input>
+                      </ion-item><br>
+                      <form>
+                              <input type="radio" name="gender" value="male" checked> Male
+                              <input type="radio" name="gender" value="female"> Female
+                      </form>
+                          <ion-button color="primary" full type="submit">Register</ion-button>
+                 </ion-card-content>
+               </ion-card>
+               </ion-list>
+            </ion-col>
+          </ion-row>
+    </ion-grid>
+    </ion-content>
+    
+    
+    
