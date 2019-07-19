@@ -13,4 +13,7 @@ export class HomePage {
   toFeatures(){
     this.router.navigate(['features'])
   }
+  toEvent(){
+    this.router.navigate(['event-page'])
+  }
 }

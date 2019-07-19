@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style = "background-color: var(--ion-color-primary);">eventPage</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-slides [options]= "sliderConfig">
+    <ion-slide *ngFor = "let img of images"  >
+     <ion-card>
+       <ion-card-content style="background-color: var(--ion-color-primary-tint);">
+          Something 
+       </ion-card-content>
+     </ion-card> 
+      
+    </ion-slide>  
+    <ion-slide>
+      <ion-card>
+        <ion-card-content style="background-color: var(--ion-color-primary-tint);">
+            <ion-icon name="add-circle"></ion-icon>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+</ion-slides>
+
+
+</ion-content>
