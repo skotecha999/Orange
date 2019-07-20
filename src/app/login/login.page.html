@@ -2,41 +2,42 @@
   <ion-content>
 
     <ion-grid>
-      <ion-row offset="3">
-        <ion-col size-md="6" offset-md="3">
+      <ion-row size-lg="10">
+        <ion-col size-lg="6" offset-lg="3">
 
           <ion-card>
-            <ion-card-header color="primary"><b>SIGN IN</b></ion-card-header>
+            <ion-card-header color="primary" style="text-align:center" ><b>Sign In</b></ion-card-header>
             <ion-card-content>
 
-                <ion-segment>
-                    <ion-segment-button checked>
-                      <ion-label><b>User</b></ion-label>
+                <ion-segment >
+                    <ion-segment-button checked >
+                      <ion-label color="primary"><b>User</b></ion-label>
                     </ion-segment-button>
                     <ion-segment-button >
-                      <ion-label ><b>Organizer</b></ion-label>
+                      <ion-label color="primary"><b>Organizer</b></ion-label>
                     </ion-segment-button>
                   </ion-segment>
-
-              <ion-item>
-                <ion-label position="floating"><b>Username</b></ion-label>
                 <br>
-                <ion-input type="text"><ion-icon slot="start" name="person" ></ion-icon>&nbsp;</ion-input>
-              </ion-item>
-
               <ion-item>
-                  <ion-label position="floating"><b>Password</b></ion-label>
-                  <br>
-                  <ion-input type="Password"><ion-icon slot="start" name="key"></ion-icon>&nbsp;</ion-input>
-                </ion-item>
+                  <ion-icon slot="start" name="person" color="light"></ion-icon>&nbsp;
+                <ion-input type="text" placeholder="Username" color="light"></ion-input>
+              </ion-item>
+                <br>
+              <ion-item>
+                  <ion-icon slot="start" name="key" color="light"></ion-icon>&nbsp;
+                <ion-input type="password" placeholder="Password" color="light"></ion-input>
+              </ion-item>
                 <br>
                 
                 <div>
+                  <div style="text-align:start">
                   <input type="checkbox" checked>
                       <label>Remember me</label>
-               
+                    </div>
+               <div style="text-align:end">
                       <ion-button fill="clear" size="small" >Forgot password?</ion-button>
                       </div>
+                    </div>
                   <br><br>
                 
               <ion-button expand="block" ><ion-icon name="log-in" slot="end"></ion-icon>Login</ion-button>

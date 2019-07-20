@@ -11,5 +11,7 @@ export class FilterPage implements OnInit {
 
   ngOnInit() {
   }
-
 }
+
+
+
