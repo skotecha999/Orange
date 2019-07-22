@@ -7,6 +7,7 @@ import { MenuComponent } from '../../Components/menu/menu.component';
 import { IonicModule } from '@ionic/angular';
 
 import { BlankPage } from './blank.page';
+import { FiltersComponent } from 'src/app/Components/filters/filters.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [BlankPage,MenuComponent]
+  declarations: [BlankPage,MenuComponent,FiltersComponent]
 })
 export class BlankPageModule {}
