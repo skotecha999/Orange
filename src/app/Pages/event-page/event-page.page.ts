@@ -1,12 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { GetImagesService } from '../../Sevices/get-images.service';
 import { Router } from '@angular/router';
-<<<<<<< HEAD:src/app/Pages/event-page/event-page.page.ts
 import {PassImageService} from  '../../Sevices/pass-image.service'
-=======
-import {PassImageService} from  '../pass-image.service'
-import { GetEventService } from '../services/get-event.service';
->>>>>>> parent of 3ae92d70... Revert "image 2":src/app/event-page/event-page.page.ts
+
+import { GetEventService } from '../../Services/get-event.service';
   
 
 @Component({
