@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { GetImagesService } from '../get-images.service';
 import { Router } from '@angular/router';
 import {PassImageService} from  '../pass-image.service'
-import { GetEventService } from '../services/get-event.service';
   
 
 @Component({
@@ -14,8 +13,8 @@ import { GetEventService } from '../services/get-event.service';
 
 export class EventPagePage implements OnInit {
 
-  images:  { value: string }[];
-  image : { value: string };
+  images = [{ value:"../assets/img/p1.jpg"},{value: "../assets/img/p2.jpg"},{value:"../assets/img/p3.jpg"}, {value:"../assets/img/p4.jpg"}, {value:"../assets/img/p1.jpg"}, {value:"../assets/img/p2.jpg"},{value:"../assets/img/p3.jpg"}, {value:"../assets/img/p4.jpg"}];
+  image : {value:string};
   sliderConfig = {
     centeredSlides: false,
     slidesPerView: 2.5,
@@ -23,11 +22,9 @@ export class EventPagePage implements OnInit {
     slidesOffsetBefore: 5,
     slidesOffsetAfter: 10
   }
-  event: {title: string; description: string};
-
   x = window.matchMedia("(min-width: 600px)");
 
-  constructor(private imgService :GetImagesService, private router : Router, private myService: PassImageService, private eventService: GetEventService ) { }
+  constructor(private imgService :GetImagesService, private router : Router, private myService: PassImageService ) { }
 
 
   ngOnInit() {
@@ -40,9 +37,6 @@ export class EventPagePage implements OnInit {
         slidesOffsetBefore: 10,
         slidesOffsetAfter: 15
       }
-    this.images = this.imgService.getImages();
-    console.log(this.images);
-    this.event = this.eventService.getEvent();
     }
   }
 
