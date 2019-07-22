@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 
 import { UserhomePage } from './userhome.page';
 
+
+
 const routes: Routes = [
   {
     path: '',
@@ -24,3 +26,5 @@ const routes: Routes = [
   declarations: [UserhomePage]
 })
 export class UserhomePageModule {}
+
+
