@@ -1,0 +1,64 @@
+
+<ion-app>
+  <ion-content>
+
+    <ion-grid >
+      <ion-row class="ion-align-items-center">
+        <ion-col size="10" offset="1">
+
+          
+            <h1 color="primary" style="text-align:center" ><b>Sign In</b></h1><br><br>
+            
+
+
+                <ion-segment >
+                    <ion-segment-button checked >
+                      <ion-label color="primary"><b>User</b></ion-label>
+
+
+                    </ion-segment-button>
+                    <ion-segment-button >
+                      <ion-label color="primary"><b>Organizer</b></ion-label>
+                    </ion-segment-button>
+                  </ion-segment>
+                <br>
+              <ion-item>
+                  <ion-icon slot="start" name="person" color="light"></ion-icon>&nbsp;
+                <ion-input type="text" placeholder="Username" color="light"></ion-input>
+              </ion-item>
+                <br>
+              <ion-item>
+                  <ion-icon slot="start" name="key" color="light"></ion-icon>&nbsp;
+                <ion-input type="password" placeholder="Password" color="light"></ion-input>
+              </ion-item>
+                <br>
+                
+                <div>
+                  <div style="text-align:start">
+                  <input type="checkbox">
+                      <label>Remember me</label>
+                    </div>
+               <div style="text-align:end">
+                      <ion-button fill="clear" size="small" >Forgot password?</ion-button>
+                      </div>
+                    </div>
+                  <br><br>
+                
+              <ion-button expand="block" ><ion-icon name="log-in" slot="end"></ion-icon>Login</ion-button>
+            <br>
+            <ion-col size-md="4">
+                <ion-label size="small">Don't have an Account?</ion-label>
+                <br>
+                <ion-button size="small">Sign Up</ion-button>
+            </ion-col>
+
+          
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-content>
+</ion-app>
+
+

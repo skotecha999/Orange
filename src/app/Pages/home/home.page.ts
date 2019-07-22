@@ -15,5 +15,8 @@ export class HomePage {
   }
   toEvent(){
     this.router.navigate(['event-page'])
+    
+  toLogin(){
+    this.router.navigate(['login'])
   }
 }
