@@ -6,7 +6,9 @@ const routes: Routes = [
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'filter', loadChildren: './filter/filter.module#FilterPageModule' },
- { path: 'features', loadChildren: './features/features.module#FeaturesPageModule' },  { path: 'userhome', loadChildren: './userhome/userhome.module#UserhomePageModule' },
+ { path: 'features', loadChildren: './features/features.module#FeaturesPageModule' },
+  { path: 'userhome', loadChildren: './userhome/userhome.module#UserhomePageModule' },
+  
 
 
 ];
