@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { GetImagesService } from '../get-images.service';
+import { GetImagesService } from '../../Sevices/get-images.service';
 import { Router } from '@angular/router';
-import {PassImageService} from  '../pass-image.service'
+import {PassImageService} from  '../../Sevices/pass-image.service'
   
 
 @Component({
