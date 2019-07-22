@@ -4,6 +4,7 @@
 // styles are for the entire app and not just one component. Additionally, this 
 // file can hold Sass mixins, functions, and placeholder classes to be imported 
 // and used throughout the application.
+
 .ios{
     --ion-background-color: var(--ion-color-dark);
     --ion-text-color: var(--ion-color-dark-contrast)
@@ -12,3 +13,5 @@
     --ion-background-color: var(--ion-color-dark);
     --ion-text-color: var(--ion-color-dark-contrast)
 }
+
+
