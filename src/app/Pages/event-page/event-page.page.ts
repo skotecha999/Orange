@@ -1,7 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { GetImagesService } from '../../Sevices/get-images.service';
 import { Router } from '@angular/router';
+<<<<<<< HEAD:src/app/Pages/event-page/event-page.page.ts
 import {PassImageService} from  '../../Sevices/pass-image.service'
+=======
+import {PassImageService} from  '../pass-image.service'
+import { GetEventService } from '../services/get-event.service';
+>>>>>>> parent of 3ae92d70... Revert "image 2":src/app/event-page/event-page.page.ts
   
 
 @Component({
@@ -13,8 +18,8 @@ import {PassImageService} from  '../../Sevices/pass-image.service'
 
 export class EventPagePage implements OnInit {
 
-  images = [{ value:"../assets/img/p1.jpg"},{value: "../assets/img/p2.jpg"},{value:"../assets/img/p3.jpg"}, {value:"../assets/img/p4.jpg"}, {value:"../assets/img/p1.jpg"}, {value:"../assets/img/p2.jpg"},{value:"../assets/img/p3.jpg"}, {value:"../assets/img/p4.jpg"}];
-  image : {value:string};
+  images:  { value: string }[];
+  image : { value: string };
   sliderConfig = {
     centeredSlides: false,
     slidesPerView: 2.5,
@@ -22,9 +27,11 @@ export class EventPagePage implements OnInit {
     slidesOffsetBefore: 5,
     slidesOffsetAfter: 10
   }
+  event: {title: string; description: string};
+
   x = window.matchMedia("(min-width: 600px)");
 
-  constructor(private imgService :GetImagesService, private router : Router, private myService: PassImageService ) { }
+  constructor(private imgService :GetImagesService, private router : Router, private myService: PassImageService, private eventService: GetEventService ) { }
 
 
   ngOnInit() {
@@ -37,6 +44,9 @@ export class EventPagePage implements OnInit {
         slidesOffsetBefore: 10,
         slidesOffsetAfter: 15
       }
+    this.images = this.imgService.getImages();
+    console.log(this.images);
+    this.event = this.eventService.getEvent();
     }
   }
 
