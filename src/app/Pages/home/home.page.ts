@@ -20,4 +20,7 @@ export class HomePage {
   toLogin(){
     this.router.navigate(['login']);
   }
+  tosignup(){
+    this.router.navigate(['blank'])
+  }
 }
