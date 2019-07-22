@@ -3,9 +3,10 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', loadChildren: './home/home.module#HomePageModule' },  { path: 'features', loadChildren: './features/features.module#FeaturesPageModule' },
-  { path: 'attendee', loadChildren: './attendee/attendee.module#AttendeePageModule' },
-  { path: 'eventorg', loadChildren: './eventorg/eventorg.module#EventorgPageModule' },
+  { path: 'home', loadChildren: './Pages/home/home.module#HomePageModule' },
+  { path: 'features', loadChildren: './Pages/features/features.module#FeaturesPageModule' },
+  { path: 'attendee', loadChildren: './Pages/attendee/attendee.module#AttendeePageModule' },
+  { path: 'eventorg', loadChildren: './Pages/eventorg/eventorg.module#EventorgPageModule' },
 
 ];
 
