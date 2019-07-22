@@ -22,13 +22,22 @@ export class EventPagePage implements OnInit {
     slidesOffsetBefore: 5,
     slidesOffsetAfter: 10
   }
-
+  x = window.matchMedia("(min-width: 600px)");
 
   constructor(private imgService :GetImagesService, private router : Router, private myService: PassImageService ) { }
 
 
   ngOnInit() {
-    console.log(this.images);
+    if(this.x.matches)
+    {
+      this.sliderConfig = {
+        centeredSlides: false,
+        slidesPerView: 3.5,
+        spaceBetween: 10,
+        slidesOffsetBefore: 10,
+        slidesOffsetAfter: 15
+      }
+    }
   }
 
  
