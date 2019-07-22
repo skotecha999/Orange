@@ -9,6 +9,9 @@ const routes: Routes = [
 
  
   { path: 'features', loadChildren: './features/features.module#FeaturesPageModule' },
+  { path: 'menu', loadChildren: './menu/menu.module#MenuPageModule' },
+  { path: 'blank', loadChildren: './blank/blank.module#BlankPageModule' },
+
 
 
 ];
