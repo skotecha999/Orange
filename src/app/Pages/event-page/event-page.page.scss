@@ -1,0 +1,56 @@
+
+ion-slide {
+
+    flex-direction: column;
+    
+}
+
+.addImg{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 15px;
+}
+
+ion-card{
+    margin: 0 !important; 
+    padding: 0 !important;
+    border-radius: 15px;
+}
+
+
+
+.fixSize{
+    
+        height: 30vh;
+        width:40vw;
+        object-fit: cover;
+        
+        padding: 1vmin ;
+        border-radius: 15px;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+    .add{
+      width:24vw;
+    
+    }
+ }
+ @media only screen and (max-width: 599px) {
+
+ .add{
+    width:38vw;
+  
+  }
+}
+
+ .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}

@@ -11,9 +11,17 @@ export class HomePage {
   constructor(private router: Router) {}
 
   toFeatures(){
-    this.router.navigate(['features'])
+    this.router.navigate(['features']);
   }
+  toEvent(){
+    this.router.navigate(['event-page']);
+  }
+    
   toLogin(){
-    this.router.navigate(['login'])
+    this.router.navigate(['login']);
   }
+  tosignup(){
+    this.router.navigate(['signuppage'])
+  }
+  
 }
