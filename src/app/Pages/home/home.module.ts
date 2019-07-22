@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, PopoverController } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { popoverController } from '@ionic/core';
 
 @NgModule({
   imports: [
@@ -15,7 +16,7 @@ import { HomePage } from './home.page';
       {
         path: '',
         component: HomePage
-      }
+      },
     ])
   ],
   declarations: [HomePage]
