@@ -1,8 +1,11 @@
 <ion-header >
     <ion-toolbar>
-    <ion-title style="color: var(--ion-color-dark-contrast);">EventPage</ion-title>
-  </ion-toolbar>
-  </ion-header>
+        <ion-buttons slot="start" >
+          <ion-back-button color="primary" text="" icon="arrow-back"></ion-back-button>
+          <ion-title>{{event.title}}</ion-title>
+        </ion-buttons>
+      </ion-toolbar>
+</ion-header>
 
 <ion-content style="position:relative; top:2vh; ">
   
@@ -30,5 +33,11 @@
         
     </ion-slide>
   </ion-slides>
+  <ion-card>
+    <ion-card-content>
+      <h4 style="color:var(--ion-color-primary);">Description:</h4>
+      <p style="color: var(--ion-color-light);">{{event.description}}</p>
+    </ion-card-content>
+  </ion-card>
   
 </ion-content>

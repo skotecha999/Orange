@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-features',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./features.page.scss'],
 })
 export class FeaturesPage implements OnInit {
+ 
 
-  constructor() { }
+  constructor(private router: Router) { }
   
   ngOnInit() {
   }
-
+  finish(){
+    this.router.navigate(['home'])
+  }
 }
