@@ -1,19 +1,21 @@
 <ion-header >
-    <ion-toolbar>
+    <ion-toolbar >
+        <ion-title> {{event.title}}</ion-title>
         <ion-buttons slot="start" >
-          <ion-back-button color="primary" text="" icon="arrow-back"></ion-back-button>
-          <ion-title>{{event.title}}</ion-title>
+          <ion-back-button color="light"  icon="ios-arrow-back"></ion-back-button>
         </ion-buttons>
+   
+       
       </ion-toolbar>
 </ion-header>
 
-<ion-content style="position:relative; top:2vh; ">
+<ion-content  style="position:relative; top:2vh; ">
   
   <ion-slides [options]= "sliderConfig">
     <ion-slide *ngFor = "let img of images"  >
       
-        <ion-card button = "true" fill = "outline" (click) = "openImage(img)">
-          <img class="fixSize" style= "background-color: var(--ion-color-primary); "src="{{img.value}}" />
+        <ion-card button = "true"  (click) = "openImage(img)" >
+          <img class="fixSize" style="border: 2px solid var(--ion-color-primary-tint);" src="{{img.value}}" />
            
         </ion-card> 
           
@@ -22,7 +24,7 @@
 
     <ion-slide>
         
-          <ion-card  button = "true" class="card" style=" background-color: var(--ion-color-dark-tint) ;">
+          <ion-card  button = "true" class="card" >
             <ion-card-content class="fixSize add">
               
                   <ion-icon class="icon" name="add-circle"  style=" color: var(--ion-color-primary); font-size: 5vmax"></ion-icon>
@@ -33,11 +35,29 @@
         
     </ion-slide>
   </ion-slides>
-  <ion-card>
+  
+  <div class="padding">
+  <ion-card class= "card">
     <ion-card-content>
-      <h4 style="color:var(--ion-color-primary);">Description:</h4>
-      <p style="color: var(--ion-color-light);">{{event.description}}</p>
+      <ion-card-title style="color:var(--ion-color-light-shade);">Description:</ion-card-title>
+      <p style="color: var(--ion-color-light-tint);">{{event.description}}</p>
     </ion-card-content>
   </ion-card>
-  
+</div>
+<div class="padding">
+    <ion-card class= "card">
+      <ion-card-content>
+        <ion-card-title style="color:var(--ion-color-primary);">Attractions</ion-card-title>
+        <ion-grid>
+            <ion-row>
+              <div *ngFor=" let attr of event.attractions">
+                <ion-chip style= "background-color: var(--ion-color-secondary);">
+                  <ion-label color="light">{{attr}}</ion-label>
+                </ion-chip>
+              </div>
+            </ion-row>  
+        </ion-grid>       
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
