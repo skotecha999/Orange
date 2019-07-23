@@ -1,8 +1,46 @@
+<ion-header>
+ <ion-button class="homeicon">
+    <ion-icon name="home"></ion-icon>
+ </ion-button>
+ <ul>
+   <li><a href="#"><b>Events</b></a></li>&nbsp;
+   <li><a href="#"><b>Subs</b></a></li>&nbsp;
+   <li><a href="#"><b>Sign Out</b></a></li>
+ </ul>
+</ion-header>
+
+<ion-searchbar placeholder="Search Event" ></ion-searchbar>
+
+<ion-content color = "dark" >
+    <ion-slides pager="true">
+        <ion-slide class="step-one" style="background-image: url(../assets/img/f1.jpg) " >
+            <h1>Welcome!</h1>
+            <p>Text</p>
+            <div class="buttonHolder">
+                <ion-button fill = "clear" shape = "round" (click)="finish()" ><b>Skip</b><ion-icon name="arrow-forward"></ion-icon></ion-button>
+              </div>
+        </ion-slide>
+    
+        <ion-slide class="step-two" style="background-image: url(../assets/img/f2.jpg) ">
+            <h1>Feature</h1>
+            <p>Text</p>
+        </ion-slide>
+    
+        <ion-slide class="step-three" style="background-image: url(../assets/img/f3.jpg) ">
+            <h1>Feature</h1>
+            <p>Text</p>
+            <div class="buttonHolder">
+              <ion-button fill = "clear" shape = "round" (click)="finish()" >FINISH</ion-button>
+            </div>
+        </ion-slide>
+    </ion-slides>
 
 
-<ion-toolbar >
-    <ion-searchbar placeholder="Enter Location" style="color: ivory" ></ion-searchbar>
-</ion-toolbar>
 
+<cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
+    <div *cdkVirtualFor="let item of items" class="example-item">
+      <p id="example-text" class="animated slideInRight">{{item}}</p>
+    </div>
+  </cdk-virtual-scroll-viewport>
 
-  <ion-searchbar placeholder="Search" style="color: ivory" ></ion-searchbar>
+</ion-content>

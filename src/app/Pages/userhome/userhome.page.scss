@@ -1,3 +1,86 @@
 ion-button{
     text-transform: none;
 }
+
+ion-searchbar{
+    color: orange;
+    background-color: rgb(80, 4, 4);
+}
+
+ion-slide {
+    height: 30vh;
+    flex-direction: column;
+   
+  }
+  
+  .buttonHolder{
+    position: fixed;
+    bottom: 5% ;
+    
+  }
+  
+  ion-button{
+    text-transform: none;
+  }
+  
+  .step-one {
+    background-size: cover;
+    color: var(--ion-color-primary-contrast);
+  }
+  
+  .step-two {
+    background-size: cover;
+    color: var(--ion-color-primary-contrast);
+  }
+  
+  .step-three {
+    background-size: cover;
+    color: var(--ion-color-primary-contrast);
+  }
+  
+
+
+.homeicon{
+    float: left;
+    width: 10%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top:8%;
+    margin-right: 5%;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    padding: 10px 20px;
+    border: 1px solid orange;
+    text-decoration: none;
+
+}
+
+.example-viewport{
+    height: 100vh;
+    border: 1px solid medium;
+    overflow-x: hidden;
+    color: aliceblue;
+}
+
+.example-item{
+    height: 100px;
+   
+}
+
+.example-text{
+    widows: 200px;
+    margin: auto;
+    position: relative;
+    padding: 5px 0;
+    color: aliceblue;
+}
