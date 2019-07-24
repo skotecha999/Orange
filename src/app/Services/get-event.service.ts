@@ -11,7 +11,6 @@ export class GetEventService {
   };
 
   getEvent(){
-    console.log("getEvent Called");
     return this.data;
   }
   

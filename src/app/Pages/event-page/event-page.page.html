@@ -46,8 +46,8 @@
 </div>
 <div class="padding">
     <ion-card class= "card">
-      <ion-card-content>
-        <ion-card-title style="color:var(--ion-color-primary);">Attractions</ion-card-title>
+      <ion-card-content style="padding-left:0mm ;">
+        <ion-card-title style="color:var(--ion-color-primary); padding-left:1em ;">Attractions</ion-card-title>
         <ion-grid>
             <ion-row>
               <div *ngFor=" let attr of event.attractions">
@@ -61,3 +61,6 @@
     </ion-card>
   </div>
 </ion-content>
+<ion-footer style="padding-left:0.2em; padding-right: 0.2em;">
+<ion-button expand="block">RSVP</ion-button>
+</ion-footer>

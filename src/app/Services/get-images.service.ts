@@ -18,7 +18,6 @@ export class GetImagesService {
   constructor() { }
 
   getImages(){
-    console.log("getimages Called");
     return this.data;
   }
 }
