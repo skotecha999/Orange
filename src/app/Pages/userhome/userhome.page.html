@@ -1,6 +1,6 @@
 <ion-header>
  <ion-button class="homeicon">
-    <ion-icon name="home"></ion-icon>
+    <ion-icon name="home" size="large"></ion-icon>
  </ion-button>
  <ul>
    <li><a href="#"><b>Events</b></a></li>&nbsp;
@@ -33,7 +33,25 @@
               <ion-button fill = "clear" shape = "round" (click)="finish()" >FINISH</ion-button>
             </div>
         </ion-slide>
+
+        <ion-slide class="step-four" style="background-image: url(../assets/img/f1.jpg) ">
+          <h1>Feature</h1>
+          <p>Text</p>
+          <div class="buttonHolder">
+            <ion-button fill = "clear" shape = "round" (click)="finish()" >FINISH</ion-button>
+          </div>
+      </ion-slide>
+
+      <ion-slide class="step-five" style="background-image: url(../assets/img/f2.jpg) ">
+        <h1>Feature</h1>
+        <p>Text</p>
+        <div class="buttonHolder">
+          <ion-button fill = "clear" shape = "round" (click)="finish()" >FINISH</ion-button>
+        </div>
+    </ion-slide>
     </ion-slides>
+
+    <ion-button class="filterclass" fill="clear"><ion-icon name="funnel" slot="start"></ion-icon><b>Filter</b></ion-button>
 
 
 
