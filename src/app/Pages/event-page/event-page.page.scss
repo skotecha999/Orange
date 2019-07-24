@@ -1,23 +1,37 @@
 
 ion-slide {
-
     flex-direction: column;
-    
 }
 
 ion-list{
   background-color: var(--ion-color-dark-tint) !important ;
 }
 
+ion-card{
+  border-radius: 15px;
+}
+
+.picture{
+  margin:0 !important;
+  padding:0!important;
+}
+
+.footer{
+  height: 5em !important;
+}
+
+.arrow{
+  padding-top: 0.4em;
+  padding-left: 5vw !important;
+  padding-right: 5vw !important;
+
+}
+
+
+
 .addImg{
     height: 20rem;
     width: 20rem;
-    border-radius: 15px;
-}
-
-ion-card{
-    margin: 0 !important; 
-    padding: 0 !important;
     border-radius: 15px;
 }
 
@@ -27,7 +41,6 @@ ion-card{
 .padding{
   margin-left: 5px;  margin-bottom: 5px;  margin-top: 10px;  margin-right: 5px;
 }
-
 
 .fixSize{
     
@@ -39,6 +52,14 @@ ion-card{
         border-radius: 15px;
 }
 
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
 
 
 @media only screen and (min-width: 600px) {
@@ -56,11 +77,5 @@ ion-card{
   }
 }
 
- .icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-}
+
+
