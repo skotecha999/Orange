@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController, NavParams } from '@ionic/angular';
-
+import { HomeFilterService } from '../../Services/home-filter.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-filters',
   templateUrl: './filters.page.html',
@@ -8,7 +9,7 @@ import { ModalController, NavParams } from '@ionic/angular';
 })
 export class FiltersPage implements OnInit {
 
-  selectOption=['Spiritual','Sports','Dance','Musical'];
+  
   selectOptions=['Below 2Km','Below 4Km'];
   sliderConfig = {
     centeredSlides: false,
@@ -23,7 +24,7 @@ export class FiltersPage implements OnInit {
  
   constructor(
     private modalController: ModalController,
-    private navParams: NavParams
+    private navParams: NavParams,private imgService :HomeFilterService, private router : Router
   ) { }
  
   ngOnInit() {
