@@ -5,10 +5,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { MenuComponent } from '../../Components/menu/menu.component';
 
 import { IonicModule } from '@ionic/angular';
-import { IonicSelectableModule } from 'ionic-selectable';
+
 import { BlankPage } from './blank.page';
 import { FiltersComponent } from 'src/app/Components/filters/filters.component';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 const routes: Routes = [
   {
@@ -22,10 +21,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    IonicSelectableModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [BlankPage,MenuComponent,FiltersComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  declarations: [BlankPage,MenuComponent,FiltersComponent]
 })
 export class BlankPageModule {}

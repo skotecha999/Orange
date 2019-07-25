@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {PassImageService} from  '../../Services/pass-image.service'
+import {PassImageService} from  '../../Sevices/pass-image.service'
 
 @Component({
   selector: 'app-image',
