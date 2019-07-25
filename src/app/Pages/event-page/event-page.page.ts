@@ -31,7 +31,7 @@ export class EventPagePage implements OnInit {
     initialSlide:1,
     centeredSlides: true,
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 3,
     followFinger: false,
     shortSwipes: false,
     longSwipesRatio: 0.7,
@@ -57,7 +57,9 @@ export class EventPagePage implements OnInit {
         slidesOffsetBefore: 10,
         slidesOffsetAfter: 15
       }
-     
+      this.joinConfig['longSwipesRatio']= 0.4;
+        
+      
     }
   }
 

@@ -68,52 +68,37 @@
 <ion-footer style="padding:0.3em;">
 <ion-slides class="footer" [options]= "joinConfig">
   
-    <ion-slide style="background-color: var(--ion-color-secondary); border-radius: 0.4em">
-        <ion-grid style="padding: 0;">
-            <ion-row style="padding-top: 0; align-items: center;">
-                <ion-button color="light shade" shape="round" style="padding:0.1em !important;" (click)="count=count-1">
-                    <ion-icon name="remove"></ion-icon>
-                </ion-button>
-                <ion-card style="background-color: white; height: 3em; width:3.3em; ">
-                    <ion-card-content style=" text-align: center; padding:0; padding-top:0.9em;  height: 3em; width:3.3em;"><p  >{{count}}</p></ion-card-content>
-                  </ion-card>
-                
-                <ion-button  color="light shade" shape="round" style="padding:0.1em !important;"  (click)="count=count+1">
-                    <ion-icon name="add"></ion-icon>
-                </ion-button>
+  <ion-slide style="background-color: var(--ion-color-secondary); border-radius: 0.4em; align-items: center;">
+    <ion-buttons>
+      <ion-button  shape="round"  class="circle"  (click)="count=count-1">
+        <ion-icon name="remove"></ion-icon>
+    </ion-button>
+    <ion-card style="background-color: white; height: 3em; width:3.3em; ">
+        <ion-card-content style=" text-align: center; padding:0; padding-top:0.9em;  height: 3em; width:3.3em;"><p  >{{count}}</p></ion-card-content>
+      </ion-card>
     
-            </ion-row>
-          </ion-grid>
-           
-    </ion-slide>
+    <ion-button  shape="round"   class="circle"   (click)="count=count+1">
+        <ion-icon name="add"></ion-icon>
+    </ion-button>
+    
+    <ion-button  shape="round"   class="circle"   style="position:absolute; left: 50vw; background-color: var(--ion-color-primary);" >
+      <ion-icon style="font-size: 1.5em;" name="person-add"></ion-icon>
+  </ion-button>
 
-  <ion-slide style="background-color: var(--ion-color-primary); border-radius: 0.4em">
-    <ion-grid>
-      <ion-row>
-        <ion-col class="arrow" >
-            <ion-icon  name="ios-arrow-forward"></ion-icon>
-        </ion-col>
-        <ion-col class="arrow" >
-            <ion-icon  name="ios-arrow-forward"></ion-icon>
-        </ion-col>
-        <ion-col>
-            RSVP
-          </ion-col>
-          <ion-col class="arrow" >
-              <ion-icon  name="ios-arrow-forward"></ion-icon>
-            </ion-col>
-            <ion-col class="arrow" >
-                <ion-icon  name="ios-arrow-forward"></ion-icon>
-              </ion-col>
-                      
-          
-          
-       </ion-row>
-    </ion-grid>
-  
+    </ion-buttons>
+  </ion-slide>
 
-  
+
+  <ion-slide style="background-color: var(--ion-color-primary); border-radius: 0.4em; align-items: center;">
+   <ion-buttons>
+    <ion-icon  name="ios-arrow-forward" style="position: absolute; right:45vw;"></ion-icon>
+    <p>RSVP</p>
+  </ion-buttons>
+
   </ion-slide>
  
+ 
+
+
 </ion-slides>
 </ion-footer>
