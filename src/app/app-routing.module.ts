@@ -25,7 +25,8 @@ const routes: Routes = [
 
   { path: 'features', loadChildren: './Pages/features/features.module#FeaturesPageModule' },
   { path: 'attendee', loadChildren: './Pages/attendee/attendee.module#AttendeePageModule' },
-  { path: 'eventorg', loadChildren: './Pages/eventorg/eventorg.module#EventorgPageModule' },
+  { path: 'eventorg', loadChildren: './Pages/eventorg/eventorg.module#EventorgPageModule' },  { path: 'test', loadChildren: './Pages/test/test.module#TestPageModule' },
+
 
 ];
 

@@ -10,27 +10,18 @@
 </ion-header>
 
 <ion-content  style="position:relative; top:2vh; ">
-  
   <ion-slides [options]= "sliderConfig">
     <ion-slide class="picture" *ngFor = "let img of images"  >
-      
-        <ion-card button = "true"  (click) = "openImage(img)" >
+      <ion-card button = "true"  (click) = "openImage(img)" >
           <img class="fixSize" style="border: 2px solid var(--ion-color-primary-tint);" src="{{img.value}}" />
-           
-        </ion-card> 
-          
+      </ion-card> 
     </ion-slide>  
-  
 
     <ion-slide>
-        
-          <ion-card  button = "true" class="card" >
-            <ion-card-content class="fixSize add">
-              
-                  <ion-icon class="icon" name="add-circle"  style=" color: var(--ion-color-primary); font-size: 5vmax"></ion-icon>
-                  
-              
-            </ion-card-content>
+       <ion-card  button = "true" class="card" >
+         <ion-card-content class="fixSize add">
+            <ion-icon class="icon" name="add-circle"  style=" color: var(--ion-color-primary); font-size: 5vmax"></ion-icon>
+         </ion-card-content>
            </ion-card>
         
     </ion-slide>
