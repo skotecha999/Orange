@@ -18,15 +18,14 @@ const routes: Routes = [
   { path: 'signuppage', loadChildren: './Pages/signuppage/signuppage.module#SignuppagePageModule' },
 
   { path: 'features', loadChildren: './Pages/features/features.module#FeaturesPageModule' },
-  { path: 'menu', loadChildren: './Components/menu/menu.module#MenuPageModule' },
-  { path: 'blank', loadChildren: './Pages/blank/blank.module#BlankPageModule' },
+ 
 
 
   { path: 'features', loadChildren: './Pages/features/features.module#FeaturesPageModule' },
   { path: 'attendee', loadChildren: './Pages/attendee/attendee.module#AttendeePageModule' },
   { path: 'eventorg', loadChildren: './Pages/eventorg/eventorg.module#EventorgPageModule' },
   { path: 'orghome', loadChildren: './Pages/orghome/orghome.module#OrghomePageModule' },
-  { path: 'filters', loadChildren: './filters/filters.module#FiltersPageModule' },
+ 
   
 
 
