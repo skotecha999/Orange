@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { UserhomePage } from './userhome.page';
 import {ScrollDispatchModule} from '@angular/cdk/scrolling';
-import { FiltersComponent } from 'src/app/Components/filters/filters.component';
+
 
 const routes: Routes = [
   {
@@ -22,7 +22,7 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     ScrollDispatchModule
   ],
-  declarations: [UserhomePage, FiltersComponent]
+  declarations: [UserhomePage]
 })
 export class UserhomePageModule {}
 
