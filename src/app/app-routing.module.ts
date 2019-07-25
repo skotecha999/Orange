@@ -17,7 +17,6 @@ const routes: Routes = [
   { path: 'home', loadChildren: './Pages/home/home.module#HomePageModule' },
   { path: 'signuppage', loadChildren: './Pages/signuppage/signuppage.module#SignuppagePageModule' },
 
- 
   { path: 'features', loadChildren: './Pages/features/features.module#FeaturesPageModule' },
   { path: 'menu', loadChildren: './Components/menu/menu.module#MenuPageModule' },
   { path: 'blank', loadChildren: './Pages/blank/blank.module#BlankPageModule' },
