@@ -27,10 +27,7 @@ const routes: Routes = [
   { path: 'eventorg', loadChildren: './Pages/eventorg/eventorg.module#EventorgPageModule' },
   { path: 'orghome', loadChildren: './Pages/orghome/orghome.module#OrghomePageModule' },
   { path: 'filters', loadChildren: './filters/filters.module#FiltersPageModule' },
-  {
-    path: 'settings',
-    loadChildren: './setting/setting.module#SettingsModule'
-}
+  
 
 
 ];

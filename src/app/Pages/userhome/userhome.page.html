@@ -16,47 +16,16 @@
   </div>
 
 <ion-content color = "dark" >
-    <ion-slides pager="true">
-        <ion-slide class="step-one" style="background-image: url(../assets/img/f1.jpg) " >
-            <h1>Welcome!</h1>
-            <p>Text</p>
-            <div class="buttonHolder">
-                <ion-button fill = "clear" shape = "round" (click)="finish()" ><b>Skip</b><ion-icon name="arrow-forward"></ion-icon></ion-button>
-              </div>
-        </ion-slide>
-    
-        <ion-slide class="step-two" style="background-image: url(../assets/img/f2.jpg) ">
-            <h1>Feature</h1>
-            <p>Text</p>
-        </ion-slide>
-    
-        <ion-slide class="step-three" style="background-image: url(../assets/img/f3.jpg) ">
-            <h1>Feature</h1>
-            <p>Text</p>
-            <div class="buttonHolder">
-              <ion-button fill = "clear" shape = "round" (click)="finish()" >FINISH</ion-button>
-            </div>
-        </ion-slide>
 
-        <ion-slide class="step-four" style="background-image: url(../assets/img/f1.jpg) ">
-          <h1>Feature</h1>
-          <p>Text</p>
-          <div class="buttonHolder">
-            <ion-button fill = "clear" shape = "round" (click)="finish()" >FINISH</ion-button>
-          </div>
-      </ion-slide>
+    <ion-slides pager="true" >
 
-      <ion-slide class="step-five" style="background-image: url(../assets/img/f2.jpg) ">
-        <h1>Feature</h1>
-        <p>Text</p>
-        <div class="buttonHolder">
-          <ion-button fill = "clear" shape = "round" (click)="finish()" >FINISH</ion-button>
-        </div>
-    </ion-slide>
+        <ion-slide *ngFor="let image of ImageArray">
+          <img src="{{image.image}}" />
+        </ion-slide>
     </ion-slides>
 
     <filters></filters>
-
+  
 
 
 <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">

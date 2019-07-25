@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-userhome',
@@ -11,7 +12,20 @@ export class UserhomePage implements OnInit {
   title='eventsvs';
   items= Array.from({length: 100000}).map((_, i) => `Item #${i}`);
 
-  constructor() { }
+  ImageArray: any[];
+
+  constructor(public navCtrl : NavController) { 
+    this.ImageArray=[
+      {'image' : '../assets/img/f1.jpg'},
+      {'image' : '../assets/img/f2.jpg'},
+      {'image' : '../assets/img/f3.jpg'},
+      {'image' : '../assets/img/p1.jpg'},
+      {'image' : '../assets/img/p2.jpg'},
+      {'image' : '../assets/img/p3.jpg'},
+      {'image' : '../assets/img/p4.jpg'},
+      {'image' : '../assets/img/f1.jpg'}
+    ]
+  }
 
   ngOnInit() {
   }
