@@ -2,15 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
+
 import { IonicModule } from '@ionic/angular';
-import { UserhomePage } from './userhome.page';
-import {ScrollDispatchModule} from '@angular/cdk/scrolling';
-import { FiltersComponent } from 'src/app/Components/filters/filters.component';
+
+import { FiltersPage } from './filters.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: UserhomePage
+    component: FiltersPage
   }
 ];
 
@@ -19,10 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes),
-    ScrollDispatchModule
+    RouterModule.forChild(routes)
   ],
-  declarations: [UserhomePage, FiltersComponent]
+  declarations: [FiltersPage]
 })
-export class UserhomePageModule {}
-
+export class FiltersPageModule {}
