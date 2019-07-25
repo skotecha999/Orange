@@ -26,9 +26,6 @@ export class HomePage {
   touserHome(){
     this.router.navigate(['userhome'])
   }
-  toorgHome(){
-    this.router.navigate(['orghome'])
-  }
   
   
 }
