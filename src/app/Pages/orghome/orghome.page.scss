@@ -29,6 +29,7 @@ ul li a{
     padding: 10px 15px;
     border: 1px solid orange;
     text-decoration: none;
+
 }
 
 .menuclass{
@@ -53,36 +54,3 @@ ion-searchbar{
     margin-right: 5%;
     font-size: 15px;
 }
-
-ion-slide {
-    
-    height: 40vh;
-    flex-direction: column;
-  
-  }
-  
-
-  .step-one {
-    background-size: cover;
-    color: var(--ion-color-primary-contrast);
-  }
-  
-  .step-two {
-    background-size: cover;
-    color: var(--ion-color-primary-contrast);
-  }
-  
-  .step-three {
-    background-size: cover;
-    color: var(--ion-color-primary-contrast);
-  }
-
-  .step-four {
-    background-size: cover;
-    color: var(--ion-color-primary-contrast);
-  }
-
-  .step-five {
-    background-size: cover;
-    color: var(--ion-color-primary-contrast);
-  }
