@@ -21,7 +21,7 @@ export class HomePage {
     this.router.navigate(['login']);
   }
   tosignup(){
-    this.router.navigate(['test'])
+    this.router.navigate(['home'])
   }
   
 }

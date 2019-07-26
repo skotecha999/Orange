@@ -4,7 +4,8 @@ import { Router } from '@angular/router';
 import {PassImageService} from  '../../Services/pass-image.service'
 import { GetEventService } from 'src/app/Services/get-event.service';
 import { GetImagesService } from '../../Services/get-images.service';
-import { FeaturesPage } from '../features/features.page';
+import { GetSuggestionsService } from 'src/app/Services/get-suggestions.service';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-event-page',
@@ -17,7 +18,18 @@ export class EventPagePage implements OnInit {
 
   images:  { value: string }[];
   image : { value: string };
-  event: {title: string; description: string};
+  event: {
+    title: string,
+    description: string,
+    attractions: string[],
+  };
+  suggestions: {
+    title: string,
+    categories: {title: string}[],
+    date: string,
+    multiple_days: boolean,
+    address: string,
+  } [];
   count: number;
   sliderConfig = {
     centeredSlides: false,
@@ -40,10 +52,11 @@ export class EventPagePage implements OnInit {
 
   x = window.matchMedia("(min-width: 600px)");
 
-  constructor(private imgService :GetImagesService, private router : Router, private myService: PassImageService, private eventService: GetEventService ) {
+  constructor(private imgService :GetImagesService, private router : Router, private myService: PassImageService, private eventService: GetEventService,private getsuggestions: GetSuggestionsService, public toastController: ToastController  ) {
     this.images = this.imgService.getImages();
-     this.event = this.eventService.getEvent();
-     this.count= 1;
+    this.event = this.eventService.getEvent();
+    this.suggestions= this.getsuggestions.similar();
+    this.count= 1;
    }
 
 
@@ -58,16 +71,34 @@ export class EventPagePage implements OnInit {
         slidesOffsetAfter: 15
       }
       this.joinConfig['longSwipesRatio']= 0.4;
-        
-      
     }
   }
 
  
 openImage(img : {value:string}){
   this.image = img;
-  
   this.myService.setImage(this.image)
   this.router.navigate(['image']);
+}
+  async join(){{
+    const toast = await this.toastController.create({
+      header: 'Succesful',
+      message: 'Confirmed booking for you'+((this.count>1?  ' plus ' +(this.count-1)+' guest(s)' : ''))+ ' at '+  this.event.title +'.',
+      position: 'middle',
+      buttons: [
+        
+         {
+          text: 'Done',
+          role: 'cancel',
+          handler: () => {
+           
+          }
+        }
+      ]
+    });
+    toast.present();
+    this.router.navigate(['home']);
+  }
+
 }
 }

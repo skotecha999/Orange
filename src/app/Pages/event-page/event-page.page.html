@@ -53,43 +53,61 @@
     </ion-card>
   </div>
   
+<ion-card class= "card" style="padding:0; height:200px; overflow: scroll;" >
+  <ion-card-title style="font-weight: 500; padding: 0.4em; color: var(--ion-color-primary);">Suggestions</ion-card-title>
+  <ion-card-content style="padding:0; margin:0;">
+    <ion-list style="padding:0; margin:0;">
+      <div style=" padding:0.3em;"  *ngFor="let event of suggestions">
+        <event-card [data]="event"></event-card>
+      </div>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+
+<ion-card class= "card" style="padding:0; height:200px; background-color: white !important;" >
+  <ion-card-title>Comments</ion-card-title>
+</ion-card>
+
+  
   
 </ion-content>
 
+
 <ion-footer style="padding:0.3em;">
-<ion-slides class="footer" [options]= "joinConfig">
-  
-  <ion-slide style="background-color: var(--ion-color-secondary); border-radius: 0.4em; align-items: center;">
-    <ion-buttons>
-      <ion-button  shape="round"  class="circle"  (click)="count=count-1">
-        <ion-icon name="remove"></ion-icon>
-    </ion-button>
-    <ion-card style="background-color: white; height: 3em; width:3.3em; ">
-        <ion-card-content style=" text-align: center; padding:0; padding-top:0.9em;  height: 3em; width:3.3em;"><p  >{{count}}</p></ion-card-content>
-      </ion-card>
-    
-    <ion-button  shape="round"   class="circle"   (click)="count=count+1">
-        <ion-icon name="add"></ion-icon>
-    </ion-button>
-    
-    <ion-button  shape="round"   class="circle"   style="position:absolute; left: 50vw; background-color: var(--ion-color-primary);" >
-      <ion-icon style="font-size: 1.5em;" name="person-add"></ion-icon>
-  </ion-button>
+  <ion-slides class="footer" [options]="joinConfig">
+    <ion-slide style="background-color: var(--ion-color-secondary); border-radius: 0.4em; align-items: center;">
+      <ion-buttons>
 
-    </ion-buttons>
-  </ion-slide>
+        <ion-button [disabled]="(count>1)? false : true" shape="round" class="circle" (click)="count=count-1">
+          <ion-icon name="remove"></ion-icon>
+        </ion-button>
 
+        <ion-card style="background-color: white; height: 3em; width:3.3em; ">
+          <ion-card-content style=" text-align: center; padding:0; padding-top:0.9em;  height: 3em; width:3.3em;">
+            <p>{{count}}</p>
+          </ion-card-content>
+        </ion-card>
 
-  <ion-slide style="background-color: var(--ion-color-primary); border-radius: 0.4em; align-items: center;">
-   <ion-buttons>
-    <ion-icon  name="ios-arrow-forward" style="position: absolute; right:45vw;"></ion-icon>
-    <p>RSVP</p>
-  </ion-buttons>
+        <ion-button shape="round" class="circle" (click)="count=count+1">
+          <ion-icon name="add"></ion-icon>
+        </ion-button>
 
-  </ion-slide>
- 
- 
+        <ion-button shape="round" class="circle" (click)="join()"
+          style="position:absolute; left: 50vw; background-color: var(--ion-color-primary);">
+          <ion-icon style="font-size: 1.5em;" name="person-add"></ion-icon>
+        </ion-button>
+
+      </ion-buttons>
+    </ion-slide>
 
 
-</ion-slides>
+
+    <ion-slide style="background-color: var(--ion-color-primary); border-radius: 0.4em; align-items: center;">
+      <ion-buttons>
+        <ion-icon name="ios-arrow-forward" style="position: absolute; right:45vw;"></ion-icon>
+        <p>RSVP</p>
+      </ion-buttons>
+    </ion-slide>
+
+  </ion-slides>
 </ion-footer>
