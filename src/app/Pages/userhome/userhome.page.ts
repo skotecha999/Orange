@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild} from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { IonSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-userhome',
@@ -23,10 +24,15 @@ export class UserhomePage implements OnInit {
       {'image' : '../assets/img/p2.jpg'},
       {'image' : '../assets/img/p3.jpg'},
       {'image' : '../assets/img/p4.jpg'},
-      {'image' : '../assets/img/f1.jpg'}
+    
     ]
   }
-
+  slideOptsOne = {
+    initialSlide: 0,
+    slidesPerView: 1,
+    autoplay:true,
+    speed: 300
+   };
   ngOnInit() {
   }
 

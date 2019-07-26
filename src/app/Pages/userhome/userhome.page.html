@@ -17,7 +17,7 @@
 
 <ion-content color = "dark" >
 
-    <ion-slides pager="true" >
+  <ion-slides pager="true" [options]="slideOptsOne">
 
         <ion-slide *ngFor="let image of ImageArray">
           <img src="{{image.image}}" />
