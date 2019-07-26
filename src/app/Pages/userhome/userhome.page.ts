@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild} from '@angular/core';
 import { NavController } from '@ionic/angular';
-import { IonSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-userhome',

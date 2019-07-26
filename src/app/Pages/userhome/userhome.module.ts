@@ -9,6 +9,7 @@ import { FilterComponent } from 'src/app/Components/filter/filter.component';
 import { FilterpagePage } from '../filterpage/filterpage.page';
 import { MenuComponent } from 'src/app/Components/menu/menu.component';
 
+
 const routes: Routes = [
   {
     path: '',
@@ -25,7 +26,8 @@ const routes: Routes = [
     ScrollDispatchModule
   ],
   declarations: [UserhomePage, FilterComponent, FilterpagePage, MenuComponent],
-  entryComponents: [FilterpagePage,  MenuComponent]
+  entryComponents: [FilterpagePage,  MenuComponent],
+ 
 })
 export class UserhomePageModule {}
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'menu',
   templateUrl: './menu.component.html',
@@ -7,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  
   selectedPath = '';
 pages = [
     {
@@ -31,4 +31,3 @@ pages = [
   ngOnInit() {}
 
 }
-
