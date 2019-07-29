@@ -21,6 +21,7 @@ const routes: Routes = [
   { path: 'features', loadChildren: './Pages/features/features.module#FeaturesPageModule' },
   { path: 'menu', loadChildren: './Components/menu/menu.module#MenuPageModule' },
   { path: 'blank', loadChildren: './Pages/blank/blank.module#BlankPageModule' },
+  { path: 'selectcity', loadChildren: './selectcity/selectcity.module#SelectcityPageModule' },
 
 
   { path: 'features', loadChildren: './Pages/features/features.module#FeaturesPageModule' },
