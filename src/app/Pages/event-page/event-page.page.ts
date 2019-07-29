@@ -100,5 +100,11 @@ openImage(img : {value:string}){
     this.router.navigate(['home']);
   }
 
+  
 }
+clicked(){
+  console.log("Open new Event");
+
+}
+
 }

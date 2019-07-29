@@ -20,8 +20,8 @@ export class HomePage {
   toLogin(){
     this.router.navigate(['login']);
   }
-  tosignup(){
-    this.router.navigate(['home'])
+  toManagePage(){
+    this.router.navigate(['manage-event'])
   }
   
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'event-card',
@@ -6,7 +6,6 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./event-card.component.scss'],
 })
 export class EventCardComponent implements OnInit {
-
   @Input() data: {
     title: string,
     categories: {title: string}[],

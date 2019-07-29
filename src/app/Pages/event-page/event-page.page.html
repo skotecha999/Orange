@@ -58,7 +58,7 @@
   <ion-card-content style="padding:0; margin:0;">
     <ion-list style="padding:0; margin:0;">
       <div style=" padding:0.3em;"  *ngFor="let event of suggestions">
-        <event-card [data]="event"></event-card>
+        <event-card [data]="event" (click)="clicked()"></event-card>
       </div>
     </ion-list>
   </ion-card-content>
