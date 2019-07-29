@@ -1,0 +1,6 @@
+<ion-fab horizontal="end" vertical="bottom" slot="fixed"> 
+  <ion-fab-button color="primary" (click)="openModal()">
+    <ion-icon name="ios-funnel"></ion-icon>
+    <p *ngIf="dataReturned">{{dataReturned}}</p>
+  </ion-fab-button>
+ 

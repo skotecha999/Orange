@@ -23,5 +23,12 @@ export class HomePage {
   toManagePage(){
     this.router.navigate(['manage-event'])
   }
+  touserHome(){
+    this.router.navigate(['userhome'])
+  }
+  toorgHome(){
+    this.router.navigate(['orghome'])
+  }
+  
   
 }
