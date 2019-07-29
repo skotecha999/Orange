@@ -1,38 +1,35 @@
+<ion-app>
+  
+  
+  
+<ion-grid>
+  <ion-row>
+    <ion-col >
+      
+           <ion-toolbar>
+              <ion-button ion-button icon-only menuToggle >
+                <ion-icon name="menu"></ion-icon>
+              </ion-button>
 
-<ion-header>
- <ion-button class="homeicon">
-    <ion-icon name="home" size="large"></ion-icon>
- </ion-button>
- <ul>
-   <li><a href="#"><b>Events</b></a></li>&nbsp;
-   <li><a href="#"><b>Subs</b></a></li>&nbsp;
-   <li><a href="#"><b>Sign Out</b></a></li>
- </ul>
-</ion-header>
+              <ion-button>
+                Events  
+              </ion-button>
 
-<div class="divclass1">
-  <ion-button class="menuclass" fill="clear"><ion-icon name="menu" size="large" ></ion-icon></ion-button>
+              <ion-button>
+                My Subscriptions
+              </ion-button>
 
-  <ion-searchbar placeholder="Search Event" ></ion-searchbar>
-</div>
+              <ion-button>
+                  History
+                </ion-button>
 
-<ion-content color = "dark" >
+              <ion-button>
+                  About
+              </ion-button>
 
-  <ion-slides pager="true" [options]="slideOptsOne">
+            </ion-toolbar>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 
-        <ion-slide *ngFor="let image of ImageArray">
-          <img src="{{image.image}}" />
-        </ion-slide>
-    </ion-slides>
-
-    
-  <filter></filter>
-
-
-<cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
-    <div *cdkVirtualFor="let item of items" class="example-item">
-      <p id="example-text" class="animated slideInRight">{{item}}</p>
-    </div>
-  </cdk-virtual-scroll-viewport>
-
-</ion-content>
+</ion-app>

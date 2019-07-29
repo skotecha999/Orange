@@ -25,10 +25,8 @@ const routes: Routes = [
 
   { path: 'features', loadChildren: './Pages/features/features.module#FeaturesPageModule' },
   { path: 'attendee', loadChildren: './Pages/attendee/attendee.module#AttendeePageModule' },
-  { path: 'eventorg', loadChildren: './Pages/eventorg/eventorg.module#EventorgPageModule' },
-  { path: 'manage-event', loadChildren: './Pages/manage-event/manage-event.module#ManageEventPageModule' },
-  { path: 'orghome', loadChildren: './Pages/orghome/orghome.module#OrghomePageModule' },
-  { path: 'filterpage', loadChildren: './Pages/filterpage/filterpage.module#FilterpagePageModule' },
+  { path: 'eventorg', loadChildren: './Pages/eventorg/eventorg.module#EventorgPageModule' },  { path: 'manage-event', loadChildren: './Pages/manage-event/manage-event.module#ManageEventPageModule' },
+
  
 
 
