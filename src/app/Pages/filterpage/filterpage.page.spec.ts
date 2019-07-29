@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BlankPage } from './blank.page';
+import { FilterpagePage } from './filterpage.page';
 
-describe('BlankPage', () => {
-  let component: BlankPage;
-  let fixture: ComponentFixture<BlankPage>;
+describe('FilterpagePage', () => {
+  let component: FilterpagePage;
+  let fixture: ComponentFixture<FilterpagePage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BlankPage ],
+      declarations: [ FilterpagePage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BlankPage);
+    fixture = TestBed.createComponent(FilterpagePage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

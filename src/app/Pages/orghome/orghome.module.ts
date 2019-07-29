@@ -2,16 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
-import { MenuComponent } from '../../Components/menu/menu.component';
 
 import { IonicModule } from '@ionic/angular';
 
-import { BlankPage } from './blank.page';
+import { OrghomePage } from './orghome.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: BlankPage
+    component: OrghomePage
   }
 ];
 
@@ -22,6 +21,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [BlankPage,MenuComponent]
+  declarations: [OrghomePage]
 })
-export class BlankPageModule {}
+export class OrghomePageModule {}
