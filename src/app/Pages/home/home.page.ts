@@ -23,5 +23,7 @@ export class HomePage {
   toManagePage(){
     this.router.navigate(['manage-event'])
   }
-  
+  nav(str: string){
+    this.router.navigate([str])
+  }
 }
