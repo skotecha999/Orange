@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-
+val:number;
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -15,7 +15,14 @@ export class LoginPage implements OnInit {
 
 toHome()
 {
-  this.router.navigate(['userhome']);
+  if(this.val==0){
+    this.router.navigate(['orghome']);
+  }
+  else{
+    this.router.navigate(['userhome']);
+  }
+ 
+
 }
 toSignUp()
 {

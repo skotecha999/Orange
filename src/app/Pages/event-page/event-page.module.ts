@@ -6,7 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { EventPagePage } from './event-page.page';
-import { EventCardComponent } from 'src/app/Components/event-card/event-card.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 const routes: Routes = [
   {
@@ -20,8 +20,9 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
+    SharedModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [EventPagePage,EventCardComponent]
+  declarations: [EventPagePage]
 })
 export class EventPagePageModule {}

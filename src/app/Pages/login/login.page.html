@@ -12,12 +12,12 @@
 
 
                 <ion-segment >
-                    <ion-segment-button checked >
+                    <ion-segment-button checked  (ionSelect)="val=1">
                       <ion-label color="secondary"><b>User</b></ion-label>
 
 
                     </ion-segment-button>
-                    <ion-segment-button >
+                    <ion-segment-button (ionSelect)="val=0" >
                       <ion-label color="secondary"><b>Organizer</b></ion-label>
                     </ion-segment-button>
                   </ion-segment>

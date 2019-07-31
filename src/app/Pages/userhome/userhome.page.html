@@ -1,1 +1,23 @@
-<menu></menu>
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Events</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button color="light" icon="return-left"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content >
+  <ion-card style=" Padding:0!important; background-color: var(--ion-color-dark-tint) !important ;  ">
+    <ion-card-content style=" Padding:0!important;">
+        <ion-list style="padding:0; margin:0;">
+            <div style=" padding:0.3em;"  *ngFor="let event of events">
+              <event-card [data]="event" (click)="clicked()"></event-card>
+            </div>
+          </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

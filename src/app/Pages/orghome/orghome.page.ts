@@ -3,11 +3,11 @@ import { GetSuggestionsService } from 'src/app/Services/get-suggestions.service'
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-userhome',
-  templateUrl: './userhome.page.html',
-  styleUrls: ['./userhome.page.scss'],
+  selector: 'app-orghome',
+  templateUrl: './orghome.page.html',
+  styleUrls: ['./orghome.page.scss'],
 })
-export class UserhomePage implements OnInit {
+export class OrghomePage implements OnInit {
 
   events: {
     title: string,
@@ -28,5 +28,6 @@ export class UserhomePage implements OnInit {
   
   ngOnInit() {
   }
+
 
 }

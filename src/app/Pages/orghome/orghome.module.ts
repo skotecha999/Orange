@@ -5,25 +5,24 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { UserhomePage } from './userhome.page';
+import { OrghomePage } from './orghome.page';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 const routes: Routes = [
   {
     path: '',
-    component: UserhomePage
+    component: OrghomePage
   }
 ];
 
 @NgModule({
   imports: [
+    SharedModule,
     CommonModule,
     FormsModule,
     IonicModule,
-    SharedModule,
-    
     RouterModule.forChild(routes)
   ],
-  declarations: [UserhomePage]
+  declarations: [OrghomePage]
 })
-export class UserhomePageModule {}
+export class OrghomePageModule {}

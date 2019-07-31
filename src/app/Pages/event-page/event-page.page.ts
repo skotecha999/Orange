@@ -46,7 +46,7 @@ export class EventPagePage implements OnInit {
     spaceBetween: 3,
     followFinger: false,
     shortSwipes: false,
-    longSwipesRatio: 0.7,
+    longSwipesRatio: 0.5,
     loop: true,
   }
 
@@ -97,14 +97,14 @@ openImage(img : {value:string}){
       ]
     });
     toast.present();
-    this.router.navigate(['home']);
+    this.router.navigate(['userhome']);
   }
 
   
 }
 clicked(){
   console.log("Open new Event");
-
+  this.router.navigate(['event-page']);
 }
 
 }
