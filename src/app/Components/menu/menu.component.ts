@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -14,21 +15,15 @@ pages = [
     {
       title: 'Home',
     },
-    {
-      title: 'My Subscriptions'
-    },
-    {
-      title: 'Settings',
-    },
-    {
-      title: 'Help',
-    }
-  ];
+      ];
 
-  calender=['7-july','8-july','9-july'];
+  calendar=['7-july','8-july','9-july'];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
+toLogin(){
+  this.router.navigate(['login']);
+}
   ngOnInit() {}
 
 }

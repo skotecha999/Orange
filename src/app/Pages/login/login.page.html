@@ -13,12 +13,12 @@
 
                 <ion-segment >
                     <ion-segment-button checked >
-                      <ion-label color="primary"><b>User</b></ion-label>
+                      <ion-label color="secondary"><b>User</b></ion-label>
 
 
                     </ion-segment-button>
                     <ion-segment-button >
-                      <ion-label color="primary"><b>Organizer</b></ion-label>
+                      <ion-label color="secondary"><b>Organizer</b></ion-label>
                     </ion-segment-button>
                   </ion-segment>
                 <br>
@@ -44,12 +44,12 @@
                     </div>
                   <br><br>
                 
-              <ion-button expand="block" ><ion-icon name="log-in" slot="end"></ion-icon>Login</ion-button>
+              <ion-button expand="block" (click)="toHome()" ><ion-icon name="log-in" slot="end"></ion-icon>Login</ion-button>
             <br>
             <ion-col size-md="4">
-                <ion-label size="small">Don't have an Account?</ion-label>
+                <ion-label style="font-size: 1.5em;">Don't have an Account?</ion-label>
                 <br>
-                <ion-button size="small">Sign Up</ion-button>
+                <ion-button size="small" (click)="toSignUp()">Sign Up</ion-button>
             </ion-col>
 
           
