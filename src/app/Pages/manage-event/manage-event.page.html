@@ -1,0 +1,68 @@
+<ion-header >
+    <ion-toolbar >
+        <ion-title>Manage {{event.title}}</ion-title>
+        <ion-buttons slot="start" >
+          <ion-back-button color="light"  icon="ios-arrow-back"></ion-back-button>
+        </ion-buttons>
+   
+       
+      </ion-toolbar>
+</ion-header>
+
+<ion-content  style="position:relative; top:2vh; ">
+  <ion-slides [options]= "sliderConfig" #myslides>
+    <ion-slide class="picture" *ngFor = "let img of images; let i = index"  >
+        <ion-fab  slot="fixed" edge >
+            <ion-fab-button size="small" translucent="true" color="dark" (click) = "delete(i)"  >
+              <ion-icon size="large" name="close"></ion-icon>
+            </ion-fab-button>
+          </ion-fab>
+      <ion-card button = "true"  (click) = "openImage(img)" >
+          
+          <img class="fixSize" style="border: 2px solid var(--ion-color-primary-tint);" src="{{img.value}}" />
+      </ion-card> 
+    </ion-slide>  
+
+    <ion-slide>
+       <ion-card  button = "true" class="card" >
+         <ion-card-content class="fixSize add">
+            <ion-icon class="icon" name="add-circle"  style=" color: var(--ion-color-primary); font-size: 5vmax"></ion-icon>
+         </ion-card-content>
+           </ion-card>
+        
+    </ion-slide>
+  </ion-slides>
+  
+  <div class="padding">
+  <ion-card class= "card">
+    <ion-card-content>
+      <ion-card-title style="color:var(--ion-color-light-shade);">Description: </ion-card-title>
+      <p style="color: var(--ion-color-light-tint);">{{event.description}}</p>
+    </ion-card-content>
+    <ion-button expand="block" >edit</ion-button>
+  </ion-card>
+</div>
+<div class="padding">
+    <ion-card class= "card">
+      <ion-card-content style="padding-left:0mm ;">
+        <ion-card-title style="color:var(--ion-color-primary); padding-left:1em ;">Attractions</ion-card-title>
+        <ion-grid>
+            <ion-row>
+              <div *ngFor=" let attr of event.attractions">
+                <ion-chip style= "background-color: var(--ion-color-secondary);">
+                  <ion-label color="light">{{attr}}</ion-label>
+                </ion-chip>
+              </div>
+            </ion-row>  
+        </ion-grid>      
+        <ion-button expand="block" >edit</ion-button>
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>
+
+<ion-footer style="padding:0.3em;">
+  <ion-button expand="block">View attendee list</ion-button>
+</ion-footer>

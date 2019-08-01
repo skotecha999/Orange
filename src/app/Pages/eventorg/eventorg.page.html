@@ -1,0 +1,56 @@
+
+  <ion-app>
+
+    <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title style="text-align:center">Event Organizer</ion-title>
+    </ion-toolbar>
+  </ion-header>
+    <ion-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col size-md="6" offset-md="3">
+              
+                  <br><br>
+                     
+                       <ion-item>
+                        <ion-label position="floating" color="primary">Event Name</ion-label>
+                        <ion-input type="any"></ion-input>
+                       </ion-item>
+                       
+                          <ion-item>
+                              <ion-label position="floating" color="primary">Start Date</ion-label>
+                              <ion-datetime displayFormat="MM/DD/YYYY" min="1994-03-14" max="2012-12-09"></ion-datetime>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label position="floating" color="primary">End Date</ion-label>
+                                <ion-datetime displayFormat="MM/DD/YYYY" min="1994-03-14" max="2012-12-09"></ion-datetime>
+                              </ion-item>
+                              <ion-item>
+                                  <ion-label position="floating" color="primary">Start time</ion-label>
+                                  <ion-datetime displayFormat="HH:mm" ></ion-datetime>
+                                </ion-item>
+                           <ion-item>
+                              <ion-label position="floating" color="primary">Duration</ion-label>
+                              <ion-input></ion-input>
+                             </ion-item>
+                             <ion-item>
+                                <ion-label position="floating" color="primary">Address</ion-label>
+                                <ion-input ></ion-input>
+                               </ion-item>
+                               <div margin-vertical text-center>
+                               <ion-button fill="outline" color="primary">
+                                  <ion-icon slot="start" name="add-circle"></ion-icon>Add Event</ion-button>
+                                </div>
+                    
+               
+        
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+        
+    
+        
+
+    </ion-content>
+  </ion-app>

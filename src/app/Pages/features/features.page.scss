@@ -1,0 +1,30 @@
+ion-slide {
+    height: 100vh;
+    flex-direction: column;
+    
+}
+
+.buttonHolder{
+    position: fixed;
+    bottom: 5% ;
+    
+}
+
+ion-button{
+    text-transform: none;
+}
+
+.step-one {
+    background-size: cover;
+    color: var(--ion-color-primary-contrast);
+}
+
+.step-two {
+    background-size: cover;
+    color: var(--ion-color-primary-contrast);
+}
+
+.step-three {
+    background-size: cover;
+    color: var(--ion-color-primary-contrast);
+}

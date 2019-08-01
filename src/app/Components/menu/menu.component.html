@@ -1,0 +1,43 @@
+<ion-menu side="start">
+  <ion-item>
+    <ion-avatar class="ion-margin-start">
+      <img src="https://img.mobiscroll.com/demos/card_2.png">
+    </ion-avatar> &nbsp;
+    <ion-label>bangalore</ion-label>
+  </ion-item>
+  <ion-content>
+    <ion-list>
+      <ion-menu-toggle auto-hide="false" *ngFor="let p of pages">
+        <ion-item>
+          <ion-label>
+            {{ p.title }}
+          </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-item>
+        <ion-label>Upcoming Events</ion-label>
+        <ion-select style="background-color: var(--ion-color-dark-tink);">
+          <ion-select-option value="calendar" *ngFor="let date of calendar"> </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item (click)="toLogin()" tappable>
+        <ion-icon name="log-out" slot="end">Logout</ion-icon>
+        Logout
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<div class="ion-page" main>
+  <ion-header>
+    <ion-toolbar color="secondary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Home</ion-title>
+    </ion-toolbar>
+    <ion-searchbar style="background-color: var(--ion-color-secondary-tint); --ion-text-color: White;"></ion-searchbar>
+  </ion-header>
+</div>

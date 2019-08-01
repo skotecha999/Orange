@@ -1,0 +1,36 @@
+<ion-card style="padding:0; margin:0;" button = "true"  >
+  <ion-grid style="padding:0; margin:0;">
+    <ion-row style="padding:0; margin:0;">
+    <ion-col size="8">
+      <ion-row style="border-block-end: thin solid var(--ion-color-secondary); padding-left: 2px;">
+        <div>
+          <h6 style="margin: 0; font-weight: 600; color:  var(--ion-color-primary);">
+            
+                {{data.title}}
+            
+          </h6> 
+        </div>
+      </ion-row>
+
+      <ion-row class="rowText">
+        <b>Categories:</b>&nbsp;<div  *ngFor="let str of data.categories">{{str.title}},&nbsp;</div>
+      </ion-row>
+
+      
+      <ion-row class="rowText" style="color: var(--ion-color-secondary);"> Address:&nbsp;{{(data.address)}}
+      </ion-row>
+      <ion-row style="position: absolute; bottom: 0.8em;">
+        <div>{{data.date}}</div>
+        <div *ngIf="data.multiple_days===true" style="font-weight: 600;">&nbsp;Onwards</div>
+      </ion-row>
+    </ion-col>
+
+    <ion-col style="padding: 0.1em !important;"  size="4">
+        <img class="fixSize" style="border: 2px solid var(--ion-color-primary-tint);" src="{{data.image}}" />
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+</ion-card>
+
+
+
